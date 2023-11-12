@@ -32,10 +32,44 @@ header {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: #7b8e7e;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #e2f4f5;
+  text-decoration: none;
+}
+
+.btn :hover {
+  color: #e2f4f5;
+  background-color: #7b8e7e;
+}
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 
 header h1 {
@@ -93,6 +127,21 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
 }
 
 main p {
@@ -155,5 +204,13 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
