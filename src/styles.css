@@ -19,10 +19,12 @@ header {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
+
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
@@ -32,9 +34,22 @@ header {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -59,14 +74,10 @@ header {
   text-decoration: none;
 }
 
-.btn :hover {
-  color: #e2f4f5;
-  background-color: #7b8e7e;
-}
-
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px;
 }
 section.secondary {
   background: #f8f8f8;
